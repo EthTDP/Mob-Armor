@@ -1,0 +1,6 @@
+{
+  "parent" : "item/generated",
+  "textures" : {
+    "layer0" : "mobarmor:item/no_hunger_rotten_flesh"
+  }
+}

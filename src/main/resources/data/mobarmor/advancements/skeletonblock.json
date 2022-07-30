@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "mobarmor:skeleton_block"
+    },
+    "title": "Skeleton Block",
+    "description": "You got the shootiness of a skeleton block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/skeleton_block.png"
+  },
+  "parent": "mobarmor:skeletoningot",
+  "criteria": {
+  "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:skeleton_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants" : {
+    "facing=north" : { "model" :  "mobarmor:block/mob_gem_cutting_station", "y" :  180 },
+    "facing=east" : { "model" :  "mobarmor:block/mob_gem_cutting_station", "y" : 270 },
+    "facing=south" : { "model" :  "mobarmor:block/mob_gem_cutting_station" },
+    "facing=west" : { "model" :  "mobarmor:block/mob_gem_cutting_station", "y" :  90 }
+  }
+}

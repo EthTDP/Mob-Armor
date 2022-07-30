@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "mobarmor:skeleton_block"
+    },
+    "title": "Skeleton Dimension",
+    "description": "You went to the skeleton dimension! Get ready to feel the shootiness!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/skeleton_block.png"
+  },
+  "parent": "mobarmor:skeletonblock",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:overworld",
+        "to": "mobarmor:skeletondim"
+      }
+    }
+  }
+}

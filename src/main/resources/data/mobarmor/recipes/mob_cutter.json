@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:shears"
+    },
+    "Y" : {
+      "item": "minecraft:spider_eye"
+    },
+    "Z" : {
+      "item" : "minecraft:gunpowder"
+    },
+    "A" : {
+      "item" : "minecraft:rotten_flesh"
+    },
+    "B" : {
+      "item" : "minecraft:bone"
+    }
+  },
+  "pattern": [
+    " B ",
+    "ZXA",
+    " Y "
+  ],
+  "result": {
+    "item": "mobarmor:mob_cutter"
+  }
+}

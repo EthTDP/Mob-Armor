@@ -1,0 +1,6 @@
+{
+    "type" : "forge:add_features",
+    "biomes" : "#modarmor:biome_skeleton",
+    "features" : "mobarmor:skeleton_ore_placed",
+    "step" : "underground_ores"
+}

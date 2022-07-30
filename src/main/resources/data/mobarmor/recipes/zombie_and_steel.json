@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "F" : {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "pattern": [
+    " F ",
+    "FXF",
+    " F "
+  ],
+  "result": {
+    "item": "mobarmor:zombie_and_steel"
+  }
+}

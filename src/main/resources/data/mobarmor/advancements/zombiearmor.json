@@ -1,0 +1,51 @@
+{
+  "parent": "mobarmor:zombie_ingot",
+  "criteria": {
+    "zombie_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:zombie_helmet"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:zombie_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:zombie_leggings"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:zombie_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "mobarmor:zombie_ingot"
+    },
+    "title": "Zombie Armor",
+    "description": "You got the rottenness of all zombies. You are the zombie GOD!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/creeper_block.png"
+  },
+  "requirements": [
+    [
+      "zombie_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

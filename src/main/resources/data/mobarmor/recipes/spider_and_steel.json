@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "F" : {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "pattern": [
+    " F ",
+    "FXF",
+    " F "
+  ],
+  "result": {
+    "item": "mobarmor:spider_and_steel"
+  }
+}

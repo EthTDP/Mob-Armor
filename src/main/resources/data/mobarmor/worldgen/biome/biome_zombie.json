@@ -1,0 +1,33 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "rain",
+  "effects": {
+    "sky_color": 22275,
+    "fog_color": 6075136,
+    "water_color": 48397,
+    "water_fog_color": 871680
+  },
+  "spawners": {
+    "monster": [
+    {
+      "type": "minecraft:zombie",
+      "weight": 100,
+      "minCount": 4,
+      "maxCount": 4
+    }
+  ]},
+  "spawn_costs": {},
+  "carvers": {
+    "air" : [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [
+      "mobarmor:zombie_ore_placed"
+    ]
+  ]
+}

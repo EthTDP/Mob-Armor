@@ -1,0 +1,11 @@
+{
+  "type": "mobarmor:creeper_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "mobarmor:creepernoise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "mobarmor:biome_creeper"
+    }
+  }
+}

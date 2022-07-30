@@ -1,0 +1,6 @@
+{
+    "type" : "forge:add_features",
+    "biomes" : "#modarmor:biome_spider",
+    "features" : "mobarmor:spider_ore_placed",
+    "step" : "underground_ores"
+}

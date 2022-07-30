@@ -1,0 +1,51 @@
+{
+  "parent": "mobarmor:spider_ingot",
+  "criteria": {
+    "spider_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:spider_helmet"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:spider_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:spider_leggings"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:spider_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "mobarmor:spider_ingot"
+    },
+    "title": "Spider Armor",
+    "description": "You got the stickiness of all spiders. You are the spider GOD!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/creeper_block.png"
+  },
+  "requirements": [
+    [
+      "spider_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

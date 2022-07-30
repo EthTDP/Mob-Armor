@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "mobarmor:spider_block"
+    },
+    "title": "Spider Block",
+    "description": "You got the stickiness of a spider block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/spider_block.png"
+  },
+  "parent": "mobarmor:spideringot",
+  "criteria": {
+  "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:spider_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

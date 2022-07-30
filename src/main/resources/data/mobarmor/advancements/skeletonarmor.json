@@ -1,0 +1,51 @@
+{
+  "parent": "mobarmor:skeleton_ingot",
+  "criteria": {
+    "skeleton_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:skeleton_helmet"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:skeleton_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:skeleton_leggings"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:skeleton_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "mobarmor:skeleton_ingot"
+    },
+    "title": "Skeleton Armor",
+    "description": "You got the rottenness of all skeleton. You are the skeleton GOD!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/creeper_block.png"
+  },
+  "requirements": [
+    [
+      "skeleton_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

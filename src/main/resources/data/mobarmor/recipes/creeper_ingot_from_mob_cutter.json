@@ -1,0 +1,11 @@
+{
+  "type" : "mobarmor:mob_cutting",
+  "ingredients" : [
+    {
+      "item" : "mobarmor:raw_creeper"
+    }
+  ],
+  "output" : {
+    "item" : "mobarmor:creeper_ingot"
+  }
+}

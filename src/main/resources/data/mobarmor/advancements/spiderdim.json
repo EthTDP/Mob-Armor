@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "mobarmor:spider_block"
+    },
+    "title": "Spider Dimension",
+    "description": "You went to the spider dimension! Get ready to feel the stickiness!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/spider_block.png"
+  },
+  "parent": "mobarmor:spiderblock",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:overworld",
+        "to": "mobarmor:spiderdim"
+      }
+    }
+  }
+}

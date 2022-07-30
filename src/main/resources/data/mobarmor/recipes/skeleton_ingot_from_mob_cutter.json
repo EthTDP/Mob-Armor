@@ -1,0 +1,11 @@
+{
+  "type" : "mobarmor:mob_cutting",
+  "ingredients" : [
+    {
+      "item" : "mobarmor:raw_skeleton"
+    }
+  ],
+  "output" : {
+    "item" : "mobarmor:skeleton_ingot"
+  }
+}

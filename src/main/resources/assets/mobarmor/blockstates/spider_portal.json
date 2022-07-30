@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z" : {"model" :  "mobarmor:block/spider_portal_ew"},
+    "axis=x" : {"model" :  "mobarmor:block/spider_portal_ns"}
+  }
+}

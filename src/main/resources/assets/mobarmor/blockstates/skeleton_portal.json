@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z" : {"model" :  "mobarmor:block/skeleton_portal_ew"},
+    "axis=x" : {"model" :  "mobarmor:block/skeleton_portal_ns"}
+  }
+}

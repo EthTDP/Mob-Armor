@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values" : [
+    "mobarmor:creeper_block",
+    "mobarmor:creeper_ore",
+    "mobarmor:spider_block",
+    "mobarmor:spider_ore",
+    "mobarmor:skeleton_block",
+    "mobarmor:skeleton_ore",
+    "mobarmor:zombie_block",
+    "mobarmor:zombie_ore"
+  ]
+}

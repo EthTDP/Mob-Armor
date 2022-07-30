@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/skeleton"
+    }
+  ],
+  "ingot": "mobarmor:skeleton_ingot",
+  "type": "mobarmor:skeleton_ingot_from_skeleton"
+}

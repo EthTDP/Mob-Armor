@@ -1,0 +1,56 @@
+{
+  "parent": "mobarmor:creeper_ingot",
+  "criteria": {
+    "creeper_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:creeper_helmet"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:creeper_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:creeper_leggings"
+            ]
+          },
+          {
+            "items": [
+              "mobarmor:creeper_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.mobarmor.creeper_armor.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "mobarmor:creeper_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.mobarmor.creeper_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "creeper_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

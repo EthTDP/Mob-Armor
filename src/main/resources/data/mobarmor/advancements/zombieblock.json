@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "mobarmor:zombie_block"
+    },
+    "title": "Zombie Block",
+    "description": "You got the rotteness of a zombie block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/zombie_block.png"
+  },
+  "parent": "mobarmor:zombieingot",
+  "criteria": {
+  "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:zombie_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

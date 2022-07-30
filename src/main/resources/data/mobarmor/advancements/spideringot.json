@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "mobarmor:spider_ingot"
+    },
+    "title": "Spider Ingot",
+    "description": "You got the stickiness of a spider ingot!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/creeper_block.png"
+  },
+  "parent": "mobarmor:mobcutter",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:spider_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/spider"
+    }
+  ],
+  "ingot": "mobarmor:spider_ingot",
+  "type": "mobarmor:spider_ingot_from_spider"
+}

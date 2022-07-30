@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z" : {"model" :  "mobarmor:block/zombie_portal_ew"},
+    "axis=x" : {"model" :  "mobarmor:block/zombie_portal_ns"}
+  }
+}

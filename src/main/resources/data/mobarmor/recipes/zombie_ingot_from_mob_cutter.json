@@ -1,0 +1,11 @@
+{
+  "type" : "mobarmor:mob_cutting",
+  "ingredients" : [
+    {
+      "item" : "mobarmor:raw_zombie"
+    }
+  ],
+  "output" : {
+    "item" : "mobarmor:zombie_ingot"
+  }
+}

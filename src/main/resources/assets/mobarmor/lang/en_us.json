@@ -1,0 +1,72 @@
+{
+  "block.mobarmor.creeper_ore" : "Creeper Ore",
+  "block.mobarmor.spider_ore" : "Spider Ore",
+  "block.mobarmor.skeleton_ore" : "Skeleton Ore",
+  "block.mobarmor.zombie_ore" : "Zombie Ore",
+  "block.mobarmor.creeper_block" : "Creeper Block",
+  "block.mobarmor.skeleton_block" : "Skeleton Block",
+  "block.mobarmor.spider_block" : "Spider Block",
+  "block.mobarmor.zombie_block" : "Zombie Block",
+  "block.mobarmor.mob_gem_cutting_station" : "Mob Cutting Station",
+
+  "block.mobarmor.creeper_sapling" : "Creeper Sapling",
+  "block.mobarmor.creeper_leaves" : "Creeper Leaves",
+
+  "item.mobarmor.creeper_ingot" : "Creeper Ingot",
+  "item.mobarmor.creeper_and_steel" : "Creeper and Steel",
+  "item.mobarmor.spider_and_steel": "Spider and Steel",
+  "item.mobarmor.skeleton_and_steel" : "Skeleton and Steel",
+  "item.mobarmor.zombie_and_steel" : "Zombie and Steel",
+  "item.mobarmor.raw_creeper" : "Raw Creeper",
+  "item.mobarmor.raw_zombie" : "Raw Zombie",
+  "item.mobarmor.raw_spider" : "Raw Spider",
+  "item.mobarmor.raw_skeleton" : "Raw Skeleton",
+  "item.mobarmor.lighter" : "Lighter",
+  "item.mobarmor.mob_cutter" : "Mob Cutter",
+  "item.mobarmor.no_hunger_rotten_flesh" : "No Hunger Rotten Flesh",
+
+  "item.mobarmor.spider_ingot" : "Spider Ingot",
+  "item.mobarmor.zombie_ingot" : "Zombie Ingot",
+  "item.mobarmor.skeleton_ingot" : "Skeleton Ingot",
+
+  "item.mobarmor.creeper_helmet" : "Creeper Helmet",
+  "item.mobarmor.creeper_chestplate" : "Creeper Chestplate",
+  "item.mobarmor.creeper_leggings" : "Creeper Leggings",
+  "item.mobarmor.creeper_boots" : "Creeper Boots",
+  "item.mobarmor.creeper_sword" : "Creeper Sword",
+
+  "item.mobarmor.zombie_helmet" : "Zombie Helmet",
+  "item.mobarmor.zombie_chestplate" : "Zombie Chestplate",
+  "item.mobarmor.zombie_leggings" : "Zombie Leggings",
+  "item.mobarmor.zombie_boots" : "Zombie Boots",
+  "item.mobarmor.zombie_sword" : "Zombie Sword",
+
+  "item.mobarmor.spider_helmet" : "Spider Helmet",
+  "item.mobarmor.spider_chestplate" : "Spider Chestplate",
+  "item.mobarmor.spider_leggings" : "Spider Leggings",
+  "item.mobarmor.spider_boots" : "Spider Boots",
+  "item.mobarmor.spider_sword" : "Spider Sword",
+
+  "item.mobarmor.skeleton_helmet" : "Skeleton Helmet",
+  "item.mobarmor.skeleton_chestplate" : "Skeleton Chestplate",
+  "item.mobarmor.skeleton_leggings" : "Skeleton Leggings",
+  "item.mobarmor.skeleton_boots" : "Skeleton Boots",
+  "item.mobarmor.skeleton_sword" : "Skeleton Sword",
+
+  "item.mobarmor.warden_helmet" : "Warden Helmet",
+  "item.mobarmor.warden_chestplate" : "Warden Chestplate",
+  "item.mobarmor.warden_leggings" : "Warden Leggings",
+  "item.mobarmor.warden_boots" : "Warden Boots",
+  "item.mobarmor.warden_war_axe" : "Warden War Axe",
+
+  "itemGroup.mobarmor" : "Mob Armor",
+  "key.mobarmor.armor_key" : "Armor Key",
+  "key.category.mobarmor.mobarmor": "Mob Armor",
+  "key.mobarmor.drink_water" : "Drink Water",
+
+  "message.mobarmor.drink_water" : "Drink Water",
+  "message.mobarmor.no_water" : "No Water",
+  "entity.minecraft.villager.mobarmor.warden_master" : "Warden Master",
+  "advancements.mobarmor.creeper_armor.description" : "You Obtained Creeper Armor",
+  "advancements.mobarmor.creeper_armor.title" : "Creeper Armor"
+}

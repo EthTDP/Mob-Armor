@@ -1,0 +1,13 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/warden"
+    }
+  ],
+  "helmet": "mobarmor:warden_helmet",
+  "chestplate": "mobarmor:warden_chestplate",
+  "leggings": "mobarmor:warden_leggings",
+  "boots": "mobarmor:warden_boots",
+  "type": "mobarmor:warden_armor_from_warden"
+}

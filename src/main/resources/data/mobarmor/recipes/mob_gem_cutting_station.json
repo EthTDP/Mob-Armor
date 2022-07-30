@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:furnace"
+    },
+    "S" : {
+      "item": "mobarmor:skeleton_ingot"
+    },
+    "C" : {
+      "item" : "mobarmor:creeper_ingot"
+    },
+    "P" : {
+      "item" : "mobarmor:spider_ingot"
+    },
+    "Z" : {
+      "item" : "mobarmor:zombie_ingot"
+    },
+    "G" : {
+      "item" : "minecraft:cobblestone"
+    },
+    "M" : {
+      "item" : "minecraft:mossy_cobblestone"
+    }
+  },
+  "pattern": [
+    "SMC",
+    "MXG",
+    "ZGP"
+  ],
+  "result": {
+    "item": "mobarmor:mob_gem_cutting_station"
+  }
+}

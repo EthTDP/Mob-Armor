@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z" : {"model" :  "mobarmor:block/creeper_portal_ew"},
+    "axis=x" : {"model" :  "mobarmor:block/creeper_portal_ns"}
+  }
+}

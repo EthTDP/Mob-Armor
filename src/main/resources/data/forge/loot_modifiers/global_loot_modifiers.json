@@ -1,0 +1,12 @@
+{
+  "replace" : false,
+  "entries" : [
+    "mobarmor:warden_armor_from_chest",
+    "mobarmor:warden_armor_from_warden",
+    "mobarmor:creeper_ingot_from_creeper",
+    "mobarmor:spider_ingot_from_spider",
+    "mobarmor:skeleton_ingot_from_skeleton",
+    "mobarmor:zombie_ingot_from_zombie"
+  ]
+
+}

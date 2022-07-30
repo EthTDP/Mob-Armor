@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/zombie"
+    }
+  ],
+  "ingot": "mobarmor:zombie_ingot",
+  "type": "mobarmor:zombie_ingot_from_zombie"
+}

@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "mobarmor:creeper_block"
+    },
+    "title": "Creeper Block",
+    "description": "You got the charge of a creeper block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/creeper_block.png"
+  },
+  "parent": "mobarmor:creeperingot",
+  "criteria": {
+  "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:creeper_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

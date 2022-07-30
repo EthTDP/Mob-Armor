@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "F" : {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "pattern": [
+    " F ",
+    "FXF",
+    " F "
+  ],
+  "result": {
+    "item": "mobarmor:creeper_and_steel"
+  }
+}

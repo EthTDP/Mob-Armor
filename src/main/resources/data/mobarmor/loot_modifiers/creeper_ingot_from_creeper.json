@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/creeper"
+    }
+  ],
+  "ingot": "mobarmor:creeper_ingot",
+  "type": "mobarmor:creeper_ingot_from_creeper"
+}

@@ -1,0 +1,6 @@
+{
+    "type" : "forge:add_features",
+    "biomes" : "#modarmor:biome_zombie",
+    "features" : "mobarmor:zombie_ore_placed",
+    "step" : "underground_ores"
+}

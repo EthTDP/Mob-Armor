@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "mobarmor:mob_gem_cutting_station"
+    },
+    "title": "Mob Cutting Station",
+    "description": "You are now able to obtain all the mob ingots!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/creeper_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mobarmor:mob_gem_cutting_station"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

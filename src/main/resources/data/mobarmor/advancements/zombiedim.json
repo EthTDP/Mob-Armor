@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "mobarmor:zombie_block"
+    },
+    "title": "Zombie Dimension",
+    "description": "You went to the zombie dimension! Get ready to feel the rotteness!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "mobarmor:textures/block/zombie_block.png"
+  },
+  "parent": "mobarmor:zombieblock",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "minecraft:overworld",
+        "to": "mobarmor:zombiedim"
+      }
+    }
+  }
+}
