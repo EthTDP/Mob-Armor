@@ -2,7 +2,6 @@ package me.ethtdp.customitems.client.event;
 
 import me.ethtdp.customitems.CustomItems;
 import me.ethtdp.customitems.client.KeyInit;
-import me.ethtdp.customitems.client.overlay.AbilityOverlay;
 import me.ethtdp.customitems.client.screen.mobcutting.MobCuttingStationScreen;
 import me.ethtdp.customitems.client.screen.ModMenuTypes;
 import me.ethtdp.customitems.common.entity.client.armor.creeper.CreeperArmorRenderer;
@@ -60,6 +59,6 @@ public final class ClientModEvent {
 
     @SubscribeEvent
     public static void registerGuiOverlays(RegisterGuiOverlaysEvent event) {
-        event.registerBelowAll("creeper", AbilityOverlay.CREEPER);
+
     }
 }

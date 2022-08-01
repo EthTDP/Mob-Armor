@@ -1,6 +1,8 @@
 package me.ethtdp.customitems.core.network.packet;
 
+import me.ethtdp.customitems.client.Cooldowns;
 import me.ethtdp.customitems.common.item.custom.CreeperArmorItem;
+import me.ethtdp.customitems.core.network.ModMessages;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerLevel;
@@ -14,16 +16,18 @@ import java.util.function.Supplier;
 
 public class CreeperExplosionC2SPacket {
 
-    public CreeperExplosionC2SPacket() {
+    private int creeperCooldown;
 
+    public CreeperExplosionC2SPacket(int creeperCooldown) {
+        this.creeperCooldown = creeperCooldown;
     }
 
     public CreeperExplosionC2SPacket(FriendlyByteBuf buf) {
-
+        this.creeperCooldown = buf.readInt();
     }
 
     public void toBytes(FriendlyByteBuf buf) {
-
+        buf.writeInt(creeperCooldown);
     }
 
     public boolean handle(Supplier<NetworkEvent.Context> supplier) {
@@ -38,7 +42,6 @@ public class CreeperExplosionC2SPacket {
 
             BlockPos blockpos = ((BlockHitResult) block).getBlockPos();
             BlockPos fluidpos = ((BlockHitResult) fluid).getBlockPos();
-
                 if (block.getType() == HitResult.Type.BLOCK) {
                     level.explode(player, blockpos.getX(), blockpos.getY(), blockpos.getZ(), 4.0f, Explosion.BlockInteraction.NONE);
                 }
@@ -46,7 +49,12 @@ public class CreeperExplosionC2SPacket {
                 if (fluid.getType() == HitResult.Type.BLOCK) {
                     level.explode(player, fluidpos.getX(), fluidpos.getY(), fluidpos.getZ(), 4.0f, Explosion.BlockInteraction.NONE);
                 }
-            });
+
+                Cooldowns.setCreeperCooldown(200);
+                Cooldowns.startCreeperCooldown();
+
+                ModMessages.sendToPlayer(new CreeperCooldownS2CPacket(creeperCooldown), player);
+        });
         return true;
     }
 }

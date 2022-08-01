@@ -1,9 +1,9 @@
 package me.ethtdp.customitems.client.event;
 
 import me.ethtdp.customitems.CustomItems;
+import me.ethtdp.customitems.client.Cooldowns;
 import me.ethtdp.customitems.client.KeyInit;
 import me.ethtdp.customitems.common.item.ModArmorMaterials;
-import me.ethtdp.customitems.common.item.custom.ZombieArmorItem;
 import me.ethtdp.customitems.core.network.ModMessages;
 import me.ethtdp.customitems.core.network.packet.*;
 import net.minecraft.client.Minecraft;
@@ -13,7 +13,6 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.InputEvent;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -26,13 +25,25 @@ public class ClientEvent {
 
         if(KeyInit.armorKey.consumeClick()) {
             if(hasCorrectArmorOn(ModArmorMaterials.CREEPER, player)) {
-                ModMessages.sendToServer(new CreeperExplosionC2SPacket());
+                if(Cooldowns.getCreeperCooldown() <= 0) {
+                    ModMessages.sendToServer(new CreeperExplosionC2SPacket(Cooldowns.getCreeperCooldown()));
+                } else {
+                    ModMessages.sendToServer(new CreeperArmorFailedC2SPacket());
+                }
             } else if(hasCorrectArmorOn(ModArmorMaterials.WARDEN, player)) {
-                ModMessages.sendToServer(new WardenShootingC2SPacket());
+                if(Cooldowns.getWardenCooldown() <= 0) {
+                    ModMessages.sendToServer(new WardenShootingC2SPacket());
+                } else {
+                    ModMessages.sendToServer(new WardenArmorFailedC2SPacket());
+                }
             } else if(hasCorrectArmorOn(ModArmorMaterials.SKELETON, player)) {
                 ModMessages.sendToServer(new SkeletonBowGiveC2SPacket());
             } else if(hasCorrectArmorOn(ModArmorMaterials.ZOMBIE, player)) {
-                ModMessages.sendToServer(new ZombieGiveFoodC2SPacket());
+                if(Cooldowns.getZombieCooldown() <= 0) {
+                    ModMessages.sendToServer(new ZombieGiveFoodC2SPacket());
+                } else {
+                    ModMessages.sendToServer(new ZombieArmorFailedC2SPacket());
+                }
             }
         }
     }

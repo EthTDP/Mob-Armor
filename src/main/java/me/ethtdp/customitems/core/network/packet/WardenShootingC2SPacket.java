@@ -1,6 +1,8 @@
 package me.ethtdp.customitems.core.network.packet;
 
+import me.ethtdp.customitems.client.Cooldowns;
 import me.ethtdp.customitems.common.item.custom.WardenArmorItem;
+import me.ethtdp.customitems.core.network.ModMessages;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Vec3i;
 import net.minecraft.core.particles.ParticleTypes;
@@ -74,6 +76,10 @@ public class WardenShootingC2SPacket {
 
                 closestEntity.hurt(DamageSource.sonicBoom(closestEntity), 20.0F);
             }
+
+            Cooldowns.setWardenCooldown(1000);
+            Cooldowns.startWardenCooldown();
+            ModMessages.sendToPlayer(new WardenCooldownS2CPacket(Cooldowns.getWardenCooldown()), player);
         });
         return true;
     }

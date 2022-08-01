@@ -13,23 +13,23 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-    CREEPER("creeper", 28, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
+    CREEPER("creeper", 28, new int[]{4, 7, 10, 5}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
             2.0F, 0.0F, () -> {
         return Ingredient.of(ItemInit.CREEPER_INGOT.get());
     }),
-    SPIDER("spider", 28, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_DIAMOND,
+    SPIDER("spider", 28, new int[]{4, 7, 10, 5}, 19, SoundEvents.ARMOR_EQUIP_DIAMOND,
             2.0F, 0.0F, () -> {
         return Ingredient.of(ItemInit.SPIDER_INGOT.get());
     }),
-    ZOMBIE("zombie", 28, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_DIAMOND,
+    ZOMBIE("zombie", 28, new int[]{4, 7, 10, 5}, 19, SoundEvents.ARMOR_EQUIP_DIAMOND,
             2.0F, 0.0F, () -> {
         return Ingredient.of(ItemInit.ZOMBIE_INGOT.get());
     }),
-    SKELETON("skeleton", 28, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_DIAMOND,
+    SKELETON("skeleton", 28, new int[]{4, 7, 10, 5}, 19, SoundEvents.ARMOR_EQUIP_DIAMOND,
             2.0F, 0.0F, () -> {
         return Ingredient.of(ItemInit.SKELETON_INGOT.get());
     }),
-    WARDEN("warden", 28, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_DIAMOND,
+    WARDEN("warden", 28, new int[]{4, 7, 10, 5}, 19, SoundEvents.ARMOR_EQUIP_DIAMOND,
             2.0f, 0.0F, () -> {return Ingredient.of(Ingredient.EMPTY.getItems());
     });
 

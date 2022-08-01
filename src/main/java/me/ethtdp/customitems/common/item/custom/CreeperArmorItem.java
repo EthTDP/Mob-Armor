@@ -1,8 +1,10 @@
 package me.ethtdp.customitems.common.item.custom;
 
+import me.ethtdp.customitems.client.Cooldowns;
 import me.ethtdp.customitems.common.item.ModArmorMaterials;
 import me.ethtdp.customitems.core.network.ModMessages;
 import me.ethtdp.customitems.core.network.packet.CreeperExplosionC2SPacket;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
@@ -44,8 +46,12 @@ public class CreeperArmorItem extends GeoArmorItem implements IAnimatable{
 
     @Override
     public void onArmorTick(ItemStack stack, Level world, Player player) {
-
+        if(Cooldowns.creeperStart && Cooldowns.getCreeperCooldown() >= 0) {
+            Cooldowns.changeCreeperCooldown();
+        }
     }
+
+
 
         private static boolean hasFullSuitOfArmorOn(Player player) {
             ItemStack boots = player.getInventory().getArmor(0);

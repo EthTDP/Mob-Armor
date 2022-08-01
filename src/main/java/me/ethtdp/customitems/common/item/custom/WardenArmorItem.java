@@ -1,5 +1,6 @@
 package me.ethtdp.customitems.common.item.custom;
 
+import me.ethtdp.customitems.client.Cooldowns;
 import me.ethtdp.customitems.common.item.ModArmorMaterials;
 import me.ethtdp.customitems.core.network.ModMessages;
 import me.ethtdp.customitems.core.network.packet.WardenShootingC2SPacket;
@@ -50,7 +51,9 @@ public class WardenArmorItem extends GeoArmorItem implements IAnimatable {
 
     @Override
     public void onArmorTick(ItemStack stack, Level world, Player player) {
-
+        if(Cooldowns.wardenStart && Cooldowns.getWardenCooldown() >= 0) {
+            Cooldowns.changeWardenCooldown();
+        }
     }
 
     private static boolean hasFullSuitOfArmorOn(Player player) {

@@ -1,6 +1,8 @@
 package me.ethtdp.customitems.core.network.packet;
 
+import me.ethtdp.customitems.client.Cooldowns;
 import me.ethtdp.customitems.core.init.ItemInit;
+import me.ethtdp.customitems.core.network.ModMessages;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -34,6 +36,9 @@ public class ZombieGiveFoodC2SPacket {
 
             player.getInventory().add(ItemInit.NO_HUNGER_ROTTEN_FLESH.get().getDefaultInstance());
 
+            Cooldowns.setZombieCooldown(100);
+            Cooldowns.startZombieCooldown();
+            ModMessages.sendToPlayer(new ZombieCooldownS2CPacket(Cooldowns.getZombieCooldown()), player);
         });
         return true;
     }

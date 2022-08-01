@@ -1,6 +1,7 @@
 package me.ethtdp.customitems.common.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import me.ethtdp.customitems.client.Cooldowns;
 import me.ethtdp.customitems.client.event.ClientEvent;
 import me.ethtdp.customitems.common.item.ModArmorMaterials;
 import net.minecraft.network.chat.Component;
@@ -56,6 +57,9 @@ public class ZombieArmorItem extends GeoArmorItem implements IAnimatable {
 
     @Override
     public void onArmorTick(ItemStack stack, Level world, Player player) {
+        if(Cooldowns.zombieStart && Cooldowns.getZombieCooldown() >= 0) {
+            Cooldowns.changeZombieCooldown();
+        }
     }
 
     private boolean hasFullSuitOfArmorOn(Player player) {
