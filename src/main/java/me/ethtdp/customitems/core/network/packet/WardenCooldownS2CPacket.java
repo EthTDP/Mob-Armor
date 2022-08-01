@@ -1,6 +1,7 @@
 package me.ethtdp.customitems.core.network.packet;
 
 import me.ethtdp.customitems.client.Cooldowns;
+import me.ethtdp.customitems.client.config.MobArmorCommonConfigs;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent;
 
@@ -26,7 +27,7 @@ public class WardenCooldownS2CPacket {
 
         context.enqueueWork(() -> {
             //HERE WE ARE ON THE CLIENT!
-            Cooldowns.setWardenCooldown(1000);
+            Cooldowns.setWardenCooldown(MobArmorCommonConfigs.WARDEN_COOLDOWN.get());
             Cooldowns.startWardenCooldown();
         });
         return true;

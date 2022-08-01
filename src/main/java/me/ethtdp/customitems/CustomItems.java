@@ -1,5 +1,7 @@
 package me.ethtdp.customitems;
 
+import me.ethtdp.customitems.client.config.MobArmorClientConfigs;
+import me.ethtdp.customitems.client.config.MobArmorCommonConfigs;
 import me.ethtdp.customitems.client.screen.ModMenuTypes;
 import me.ethtdp.customitems.common.event.GlobalLootModifierInit;
 import me.ethtdp.customitems.common.recipes.ModRecipe;
@@ -14,7 +16,9 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -55,6 +59,9 @@ public class CustomItems {
         GlobalLootModifierInit.GLM.register(bus);
 
         GeckoLib.initialize();
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MobArmorClientConfigs.SPEC, "mobarmor-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MobArmorCommonConfigs.SPEC, "mobarmor-common.toml");
 
         MinecraftForge.EVENT_BUS.register(this);
     }

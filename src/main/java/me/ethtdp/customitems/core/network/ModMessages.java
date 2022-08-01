@@ -1,7 +1,6 @@
 package me.ethtdp.customitems.core.network;
 
 import me.ethtdp.customitems.CustomItems;
-import me.ethtdp.customitems.common.item.custom.CreeperArmorItem;
 import me.ethtdp.customitems.core.network.packet.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;

@@ -1,6 +1,7 @@
 package me.ethtdp.customitems.core.network.packet;
 
 import me.ethtdp.customitems.client.Cooldowns;
+import me.ethtdp.customitems.client.config.MobArmorCommonConfigs;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent;
 
@@ -26,7 +27,7 @@ public class CreeperCooldownS2CPacket {
 
         context.enqueueWork(() -> {
             //HERE WE ARE ON THE CLIENT!
-            Cooldowns.setCreeperCooldown(200);
+            Cooldowns.setCreeperCooldown(MobArmorCommonConfigs.CREEPER_COOLDOWN.get());
             Cooldowns.startCreeperCooldown();
         });
         return true;

@@ -1,7 +1,7 @@
 package me.ethtdp.customitems.core.network.packet;
 
 import me.ethtdp.customitems.client.Cooldowns;
-import me.ethtdp.customitems.common.item.custom.CreeperArmorItem;
+import me.ethtdp.customitems.client.config.MobArmorCommonConfigs;
 import me.ethtdp.customitems.core.network.ModMessages;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 public class CreeperExplosionC2SPacket {
 
-    private int creeperCooldown;
+    private final int creeperCooldown;
 
     public CreeperExplosionC2SPacket(int creeperCooldown) {
         this.creeperCooldown = creeperCooldown;
@@ -50,10 +50,10 @@ public class CreeperExplosionC2SPacket {
                     level.explode(player, fluidpos.getX(), fluidpos.getY(), fluidpos.getZ(), 4.0f, Explosion.BlockInteraction.NONE);
                 }
 
-                Cooldowns.setCreeperCooldown(200);
+                Cooldowns.setCreeperCooldown(MobArmorCommonConfigs.CREEPER_COOLDOWN.get());
                 Cooldowns.startCreeperCooldown();
 
-                ModMessages.sendToPlayer(new CreeperCooldownS2CPacket(creeperCooldown), player);
+                ModMessages.sendToPlayer(new CreeperCooldownS2CPacket(MobArmorCommonConfigs.CREEPER_COOLDOWN.get()), player);
         });
         return true;
     }

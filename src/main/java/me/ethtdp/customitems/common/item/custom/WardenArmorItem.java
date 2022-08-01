@@ -1,17 +1,14 @@
 package me.ethtdp.customitems.common.item.custom;
 
 import me.ethtdp.customitems.client.Cooldowns;
-import me.ethtdp.customitems.common.item.ModArmorMaterials;
-import me.ethtdp.customitems.core.network.ModMessages;
-import me.ethtdp.customitems.core.network.packet.WardenShootingC2SPacket;
-import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.*;
+import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;

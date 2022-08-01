@@ -1,17 +1,13 @@
 package me.ethtdp.customitems.core.network.packet;
 
 import me.ethtdp.customitems.client.Cooldowns;
+import me.ethtdp.customitems.client.config.MobArmorCommonConfigs;
 import me.ethtdp.customitems.core.init.ItemInit;
 import me.ethtdp.customitems.core.network.ModMessages;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.*;
-import net.minecraft.world.entity.ai.targeting.TargetingConditions;
-import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.network.NetworkEvent;
 
-import java.util.List;
 import java.util.function.Supplier;
 
 public class ZombieGiveFoodC2SPacket {
@@ -38,7 +34,7 @@ public class ZombieGiveFoodC2SPacket {
 
             Cooldowns.setZombieCooldown(100);
             Cooldowns.startZombieCooldown();
-            ModMessages.sendToPlayer(new ZombieCooldownS2CPacket(Cooldowns.getZombieCooldown()), player);
+            ModMessages.sendToPlayer(new ZombieCooldownS2CPacket(MobArmorCommonConfigs.ZOMBIE_COOLDOWN.get()), player);
         });
         return true;
     }

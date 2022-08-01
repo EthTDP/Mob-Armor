@@ -1,6 +1,7 @@
 package me.ethtdp.customitems.core.network.packet;
 
 import me.ethtdp.customitems.client.Cooldowns;
+import me.ethtdp.customitems.client.config.MobArmorCommonConfigs;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent;
 
@@ -26,7 +27,7 @@ public class ZombieCooldownS2CPacket {
 
         context.enqueueWork(() -> {
             //HERE WE ARE ON THE CLIENT!
-            Cooldowns.setZombieCooldown(100);
+        Cooldowns.setZombieCooldown(MobArmorCommonConfigs.ZOMBIE_COOLDOWN.get());
             Cooldowns.startZombieCooldown();
         });
         return true;
